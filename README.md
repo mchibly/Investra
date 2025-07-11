@@ -23,3 +23,18 @@ BBDC4;12.34;08/07/2024;10.50;14.80;8.50;1.20;2.50
 
 The script relies only on the Python standard library. It requires internet
 access to retrieve the HTML page from fundamentus.com.br.
+
+## IFBOI index fetcher
+
+`b3_ifboi_scraper.py` downloads the IFBOI index spreadsheet from B3's
+"Índices on Demand" page and prints the latest available quotation. It also
+uses only the Python standard library.
+
+### Running
+
+```bash
+python b3_ifboi_scraper.py
+```
+
+The output contains the columns:
+`Data_Referencia;Indice;Oscilacao;Nome_Resumido;Codigo_ISIN;Ultima_Atualizacao`.
